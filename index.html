@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>condiciones JS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="contenedor">
+
+
+      <!-- EJERCICIO 1 -->
+      <section id="ejercicio1">
+        <span class="numero-ejercicio">Ejercicio 1</span>
+        <h2 class="titulo-ejercicio">haz click en la imagen</h2>
+
+        <figure>
+          <img src="./assets/img/ejercicio1/peanuts-logo.png" class="" id="logoPeanuts" alt="logo peanuts"/>
+        </figure>
+      </section>
+
+
+      <!-- EJERCICIO 2 -->
+      <section id="ejercicio2">
+        <span class="numero-ejercicio">Ejercicio 2</span>
+        <h2 class="titulo-ejercicio">
+          Ingresa en cada casillero la cantidad de stickers que quieres llevar,
+          luego haz click en el botón verificar.
+        </h2>
+
+        <div class="contenedor-stickers">
+          <!-- sticker1 -->
+          <div class="sticker">
+            <img src="./assets/img/ejercicio2/01-snoopy.png" alt="snoopy" />
+            <p>sticker snoopy</p>
+            <input type="number" id="inputUno" min="0" max="10"/>
+          </div>
+
+          <!-- sticker1 -->
+          <div class="sticker">
+            <img src="./assets/img/ejercicio2/02-woodstock.png" alt="woodstock"/>
+            <p>sticker woodstock</p>
+            <input type="number" id="inputDos" min="0" max="10"/>
+          </div>
+
+          <!-- sticker1 -->
+          <div class="sticker">
+            <img src="./assets/img/ejercicio2/03-peanuts.png" alt="peanuts" />
+            <p>sticker peanuts</p>
+            <input type="number" id="inputTres" min="0" max="10"/>
+          </div>
+        </div>
+
+        <button class="boton" id="botonStickers">verificar</button>
+        <span class="mensaje" id="mensajeSticker"></span>
+      </section>
+
+
+      <!-- EJERCICIO 3 -->
+      <section id="ejercicio3" >
+        <span class="numero-ejercicio">Ejercicio 3</span>
+        <h2>Ingresa el password</h2>
+
+        <div class="select-password">
+          <select name="select" class="selectEstilo" id="selectorUno">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select name="select" class="selectEstilo" id="selectorDos">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select name="select" class="selectEstilo" id="selectorTres">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+
+        <button class="boton" id="botonPassword">ingresar</button>
+        <span class="mensaje" id="mensajePassword"></span>
+      </section>
+
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

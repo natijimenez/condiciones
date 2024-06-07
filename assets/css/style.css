@@ -1,0 +1,133 @@
+/* ESTILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+:root {
+    --font :"Poppins";
+    --white: #ffffff;
+    --dark: #1B1F21;
+    --blueberry: #6B7A8F;
+    --rojo: #fd0606;
+    --cirtus: #F7C331;
+    --gray: #5050503b;
+}
+.titulo-ejercicio {
+    font-size: 20px;
+    color: var(--dark);
+}
+.numero-ejercicio {
+    color: var(--blueberry);
+}
+#contenedor {
+    /* background-color: #F7C331; */
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ESTILOS EJERCICIO 1 */
+#ejercicio1 {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid var(--gray);
+}
+#ejercicio1 figure {
+    width: 300px;
+    padding: 35px 0;
+    margin: auto;
+}
+#ejercicio1 img {
+    width: 100%;
+    cursor: pointer;
+}
+.border {
+    border: 2px solid var(--rojo);
+}
+
+
+/* ESTILOS EJERCICIO 2 */
+#ejercicio2 {
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    border-bottom: 1px solid var(--gray);
+}
+.contenedor-stickers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.sticker {
+    width: 200px;
+    padding-top: 35px;
+}
+.sticker img {
+    width: 100%;
+}
+.boton{
+    display: block;
+    margin: 50px auto;
+    padding: 10px 30px;
+    background-color: var(--blueberry);
+    border: none;
+    border-radius: 7px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+.boton:hover {
+    background-color: var(--cirtus);
+    border-radius: 7px;
+    color: var(--white);
+}
+.mensaje {
+    color: var(--rojo);
+    text-align: center;
+}
+
+input {
+    cursor: pointer;
+}
+
+
+/* ESTILOS EJERCICIO 3 */
+#ejercicio3 {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid var(--gray);
+    padding: 70px 0;
+}
+.select-password {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+.selectEstilo {
+    width: 50px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--cirtus) ;
+    color: var(--blueberry);
+}
+select {
+    cursor: pointer;
+}
+
+
+@media (min-width: 992px) {
+    .contenedor-stickers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
